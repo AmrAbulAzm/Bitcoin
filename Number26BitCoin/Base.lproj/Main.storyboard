@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Number26BitCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZU-5h-DdH" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="80" width="600" height="430"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cg-0S-tbo" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="510" width="600" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rZU-5h-DdH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="2EV-UE-qbG"/>
+                            <constraint firstItem="0cg-0S-tbo" firstAttribute="top" secondItem="rZU-5h-DdH" secondAttribute="bottom" id="38L-44-Cxt"/>
+                            <constraint firstItem="0cg-0S-tbo" firstAttribute="top" secondItem="rZU-5h-DdH" secondAttribute="bottom" id="3II-wp-T1y"/>
+                            <constraint firstAttribute="trailing" secondItem="rZU-5h-DdH" secondAttribute="trailing" id="BvC-vB-aNE"/>
+                            <constraint firstItem="0cg-0S-tbo" firstAttribute="leading" secondItem="rZU-5h-DdH" secondAttribute="leading" id="FPg-Jh-7C2"/>
+                            <constraint firstItem="rZU-5h-DdH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="Hw6-Qa-hYG"/>
+                            <constraint firstAttribute="trailing" secondItem="0cg-0S-tbo" secondAttribute="trailing" id="LtD-Pm-xby"/>
+                            <constraint firstItem="0cg-0S-tbo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MtS-R8-w6o"/>
+                            <constraint firstItem="0cg-0S-tbo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Nmn-WR-LUt"/>
+                            <constraint firstAttribute="trailing" secondItem="0cg-0S-tbo" secondAttribute="trailing" id="QQB-jq-V1R"/>
+                            <constraint firstItem="rZU-5h-DdH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VMy-m0-kI2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0cg-0S-tbo" secondAttribute="bottom" id="WGo-wn-aso"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0cg-0S-tbo" secondAttribute="bottom" id="Z4Y-Oa-tKa"/>
+                            <constraint firstItem="0cg-0S-tbo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aVe-bt-x4n"/>
+                            <constraint firstItem="0cg-0S-tbo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="510" id="duI-Hf-EJ3"/>
+                            <constraint firstItem="0cg-0S-tbo" firstAttribute="trailing" secondItem="rZU-5h-DdH" secondAttribute="trailing" id="emN-iF-uWl"/>
+                            <constraint firstAttribute="trailing" secondItem="0cg-0S-tbo" secondAttribute="trailing" id="fGY-hl-ES5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0cg-0S-tbo" secondAttribute="bottom" id="jXN-yH-nSH"/>
+                            <constraint firstItem="rZU-5h-DdH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sIn-Nn-4eT"/>
+                            <constraint firstItem="0cg-0S-tbo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="500" id="sMD-br-my8"/>
+                            <constraint firstItem="0cg-0S-tbo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="w0E-0p-fWN"/>
+                            <constraint firstItem="0cg-0S-tbo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wLq-nF-QhN"/>
+                            <constraint firstItem="0cg-0S-tbo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="z8c-nl-PFs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2EV-UE-qbG"/>
+                                <exclude reference="sIn-Nn-4eT"/>
+                                <exclude reference="38L-44-Cxt"/>
+                                <exclude reference="FPg-Jh-7C2"/>
+                                <exclude reference="LtD-Pm-xby"/>
+                                <exclude reference="MtS-R8-w6o"/>
+                                <exclude reference="Nmn-WR-LUt"/>
+                                <exclude reference="aVe-bt-x4n"/>
+                                <exclude reference="emN-iF-uWl"/>
+                                <exclude reference="fGY-hl-ES5"/>
+                                <exclude reference="sMD-br-my8"/>
+                                <exclude reference="w0E-0p-fWN"/>
+                                <exclude reference="z8c-nl-PFs"/>
+                                <exclude reference="WGo-wn-aso"/>
+                                <exclude reference="Z4Y-Oa-tKa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="barChartView" destination="0cg-0S-tbo" id="dYF-ey-Lqb"/>
+                        <outlet property="barChartView2" destination="rZU-5h-DdH" id="Dm6-bk-P20"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="243"/>
+        </scene>
+    </scenes>
+</document>
